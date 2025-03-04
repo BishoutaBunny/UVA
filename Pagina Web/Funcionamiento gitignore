@@ -1,0 +1,34 @@
+el codigo ".gitignore" funciona de la siguiente manera:
+# Archivos y patrones comunes en el desarrollo de aplicaciones web y Flask
+
+# AppData/
+# - Este directorio es común en sistemas Windows y se utiliza para almacenar datos de configuración,
+#   caché y otros archivos relacionados con el funcionamiento de aplicaciones.
+# - En el contexto de Flask, herramientas como pip o entornos virtuales (venv) pueden almacenar
+#   datos aquí.
+
+# *.bin
+# - Los archivos con extensión .bin son archivos binarios que contienen datos no textuales,
+#   como imágenes compiladas o datos serializados.
+# - En Flask, estos archivos podrían ser generados por herramientas de compilación o dependencias,
+#   como una base de datos SQLite.
+
+# *.cache
+# - Los archivos .cache son utilizados para almacenar datos en caché y mejorar el rendimiento
+#   de la aplicación al evitar reprocesar información.
+# - En Flask, estos archivos podrían ser generados por bibliotecas o frameworks que utilizan caché,
+#   como Flask-Caching.
+
+# *.log
+# - Los archivos .log contienen registros (logs) de eventos, errores o actividades de la aplicación.
+# - En Flask, estos archivos son útiles para depurar y monitorear el comportamiento de la aplicación
+#   en producción o desarrollo.
+
+# *.tmp
+# - Los archivos .tmp son archivos temporales que se crean durante la ejecución de la aplicación
+#   y generalmente se eliminan después de su uso.
+# - En Flask, estos archivos podrían ser generados durante la ejecución de tareas como la carga
+#   de archivos o el procesamiento de datos.
+
+# Estos archivos y directorios suelen excluirse del control de versiones (por ejemplo, en .gitignore)
+# porque no son necesarios para el funcionamiento del código fuente y pueden variar entre entornos

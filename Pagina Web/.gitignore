@@ -1,0 +1,5 @@
+AppData/
+*.bin
+*.cache
+*.log
+*.tmp

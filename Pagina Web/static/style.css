@@ -1,0 +1,598 @@
+/* Aplica box-sizing: border-box a todos los elementos para que el padding y el borde se incluyan en el tamaño total del elemento. */
+* {
+    box-sizing: border-box;
+}
+
+/* Hace que el desplazamiento de la página sea suave cuando se usan enlaces ancla. */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Estilos generales para el cuerpo de la página. */
+body {
+    margin: 0; /* Elimina el margen predeterminado del body. */
+    font-family: 'Quicksand', 'Roboto', sans-serif; /* Define la fuente predeterminada. */
+    background-color: #f8eefb; /* Color de fondo de la página. */
+}
+
+/* Estilos para el título principal en el encabezado. */
+header h1 {
+    font-size: 50px; /* Tamaño de fuente grande para el título. */
+    font-weight: bold; /* Texto en negrita. */
+    margin-bottom: 4px; /* Margen inferior pequeño. */
+}
+
+/* Estilos para la barra de navegación en el encabezado. */
+header nav {
+    font-size: 20px; /* Tamaño de fuente para la navegación. */
+    margin-top: 10px; /* Margen superior. */
+    margin-bottom: 25px; /* Margen inferior. */
+}
+
+/* Cambia el estilo de los enlaces en el encabezado al pasar el mouse. */
+header a:hover {
+    font-weight: bold; /* Hace que los enlaces se vean en negrita al pasar el mouse. */
+}
+
+/* Estilos para el subtítulo del indicador. */
+.indicador h2 {
+    font-size: 30px; /* Tamaño de fuente para el subtítulo. */
+    color: black; /* Color del texto. */
+    display: flex; /* Usa flexbox para centrar el contenido. */
+    text-align: center; /* Alinea el texto al centro. */
+    justify-content: center; /* Centra horizontalmente. */
+}
+
+/* Estilos para los párrafos. */
+p {
+    font-size: 24px; /* Tamaño de fuente. */
+    color: #120021; /* Color del texto. */
+}
+
+/* Estilos para el elemento con ID "rango". */
+#rango {
+    color: black; /* Color del texto. */
+    font-size: 35px; /* Tamaño de fuente. */
+    display: flex; /* Usa flexbox para centrar el contenido. */
+    text-align: center; /* Alinea el texto al centro. */
+    justify-content: center; /* Centra horizontalmente. */
+    padding: 24px; /* Espaciado interno. */
+}
+
+/* Estilos para el contenedor del encabezado. */
+.encabezado {
+    max-width: 100%; /* Ancho máximo del contenedor. */
+    margin: auto; /* Centra el contenedor. */
+    display: flex; /* Usa flexbox para organizar el contenido. */
+    flex-direction: column; /* Organiza los elementos en columna. */
+    align-items: center; /* Centra los elementos horizontalmente. */
+}
+
+/* Estilos específicos para el encabezado con clase "encabezado". */
+header .encabezado {
+    background-color: blueviolet; /* Color de fondo. */
+    color: white; /* Color del texto. */
+}
+
+/* Estilos para los enlaces dentro del elemento con ID "enlace_formulario". */
+#enlace_formulario a {
+    color: white; /* Color del enlace. */
+    text-decoration: none; /* Elimina el subrayado del enlace. */
+}
+
+/* Clase para ocultar elementos. */
+.ocultar_P3 {
+    display: none; /* Oculta el elemento al que se aplica esta clase. */
+}
+
+/* Estilos para el contenedor del indicador UV. */
+.indice_uv {
+    position: relative; /* Posicionamiento relativo para el contenedor. */
+    width: 240px; /* Ancho del contenedor. */
+    height: 240px; /* Alto del contenedor. */
+    margin: auto; /* Centra el contenedor. */
+    margin-top: 50px; /* Margen superior. */
+    display: flex; /* Usa flexbox para organizar el contenido. */
+    align-items: center; /* Centra verticalmente. */
+    justify-content: center; /* Centra horizontalmente. */
+    text-align: center; /* Alinea el texto al centro. */
+    flex-direction: column; /* Organiza los elementos en columna. */
+}
+
+/* Estilos para el elemento con ID "sensor" (texto dentro del círculo UV). */
+#sensor {
+    position: absolute; /* Posicionamiento absoluto dentro del contenedor. */
+    top: 50%; /* Coloca el elemento en el 50% desde la parte superior. */
+    left: 50%; /* Coloca el elemento en el 50% desde la izquierda. */
+    transform: translate(-50%, -50%); /* Centra el elemento exactamente en el medio. */
+    font-size: 60px; /* Tamaño de fuente grande. */
+    font-weight: bold; /* Texto en negrita. */
+    color: white; /* Color del texto. */
+}
+
+/* Estilos para el círculo animado. */
+.circulo {
+    width: 100%; /* Ancho completo del contenedor. */
+    height: 100%; /* Alto completo del contenedor. */
+    background-color: #c2c2c2cc; /* Color de fondo semitransparente. */
+    border-radius: 50%; /* Hace que el elemento sea un círculo. */
+    position: absolute; /* Posicionamiento absoluto dentro del contenedor. */
+    top: 0; /* Coloca el elemento en la parte superior. */
+    left: 0; /* Coloca el elemento en la parte izquierda. */
+    animation: pulse 2s infinite; /* Aplica una animación llamada "pulse". */
+}
+
+/* Define la animación "pulse" para el círculo. */
+@keyframes pulse {
+    0% {
+        transform: scale(1); /* Tamaño normal al inicio. */
+        opacity: 1; /* Opacidad completa al inicio. */
+    }
+    50% {
+        transform: scale(1.1); /* Escala el círculo al 110% a la mitad de la animación. */
+        opacity: 0.7; /* Reduce la opacidad a la mitad de la animación. */
+    }
+    100% {
+        transform: scale(1); /* Vuelve al tamaño normal al final. */
+        opacity: 1; /* Vuelve a la opacidad completa al final. */
+    }
+}
+
+/* Estilos para el separador entre secciones. */
+.separador {
+    height: 20px; /* Altura del separador. */
+    background-color: #8237c3; /* Color de fondo. */
+    margin: 50px auto; /* Margen superior e inferior, y centrado horizontalmente. */
+    width: 95%; /* Ancho del separador. */
+    border-radius: 5px; /* Bordes redondeados. */
+}
+
+/* Estilos para el título de las secciones de información. */
+.titulo_info {
+    font-size: 40px; /* Tamaño de fuente grande. */
+}
+
+/* Estilos para los subtítulos de las secciones de información. */
+.subtitu_info {
+    font-size: 28px; /* Tamaño de fuente. */
+}
+
+/* Estilos para la sección "sobre_uva". */
+#sobre_uva {
+    font-size: 24px; /* Tamaño de fuente. */
+    margin: auto; /* Centra la sección. */
+    padding: 0 50px; /* Espaciado interno. */
+    max-width: 1400px; /* Ancho máximo de la sección. */
+}
+
+/* Alinea el texto justificado en los párrafos de "sobre_uva". */
+#sobre_uva p {
+    text-align: justify;
+}
+
+/* Estilos para la sección "peligros". */
+#peligros {
+    font-size: 24px; /* Tamaño de fuente. */
+    max-width: 1400px; /* Ancho máximo de la sección. */
+    margin: auto; /* Centra la sección. */
+    padding: 0 50px; /* Espaciado interno. */
+}
+
+/* Elimina los estilos de lista predeterminados y añade un ícono personalizado. */
+#peligros ul, #recomendaciones ul, #formulario ul {
+    list-style-type: none; /* Elimina los puntos de la lista. */
+    padding-left: 5px; /* Espaciado interno. */
+}
+
+/* Añade un ícono de sol (☀) antes de cada elemento de la lista. */
+#peligros ul li, #recomendaciones ul li, #formulario ul li {
+    position: relative; /* Posicionamiento relativo para el ícono. */
+    padding-left: 25px; /* Espaciado interno para el ícono. */
+}
+
+/* Define el ícono de sol (☀) antes de cada elemento de la lista. */
+#peligros ul li::before, #recomendaciones ul li::before, #formulario ul li::before {
+    content: "☀"; /* Ícono de sol. */
+    position: absolute; /* Posicionamiento absoluto para el ícono. */
+    left: -5px; /* Ajusta la posición del ícono. */
+    top: -5px; /* Ajusta la posición del ícono. */
+    font-size: 1.2em; /* Tamaño del ícono. */
+}
+
+/* Alinea el texto justificado en la sección "peligros". */
+#peligros p, #peligros ul {
+    text-align: justify;
+}
+
+/* Estilos para las imágenes en las secciones. */
+#img_cancer, #img_riesgo, #img_recomendaciones, #img_uva {
+    margin: auto; /* Centra las imágenes. */
+    margin-top: 50px; /* Margen superior. */
+    width: 370px; /* Ancho de las imágenes. */
+}
+
+/* Añade sombra a las imágenes. */
+#img_cancer img, #img_riesgo img, #img_recomendaciones img, #img_uva img {
+    box-shadow: 0px 0px 13px 1px #1d013660; /* Sombra suave. */
+}
+
+/* Estilos para los pies de foto de las imágenes. */
+#img_cancer figcaption, #img_riesgo figcaption, #img_recomendaciones figcaption, #img_uva figcaption {
+    color: #aaaaaa; /* Color del texto. */
+    font-size: 18px; /* Tamaño de fuente. */
+}
+
+/* Añade margen inferior a los elementos de lista en las secciones "recomendaciones" y "peligros". */
+#recomendaciones li, #peligros li {
+    margin-bottom: 8px;
+}
+
+/* Estilos para la sección "recomendaciones". */
+#recomendaciones {
+    font-size: 24px; /* Tamaño de fuente. */
+    max-width: 1400px; /* Ancho máximo de la sección. */
+    margin: auto; /* Centra la sección. */
+    padding: 0 50px; /* Espaciado interno. */
+}
+
+/* Alinea el texto justificado en las listas de "recomendaciones". */
+#recomendaciones ul {
+    text-align: justify;
+}
+
+/* Estilos para la sección de fuentes. */
+.fuente {
+    margin: 45px 0; /* Margen superior e inferior. */
+}
+
+/* Estilos para los enlaces en la sección de fuentes. */
+.fuente a {
+    text-decoration: none; /* Elimina el subrayado del enlace. */
+    color: #550899; /* Color del enlace. */
+}
+
+/* Cambia el estilo de los enlaces al pasar el mouse. */
+.fuente a:hover {
+    font-weight: bold; /* Hace que los enlaces se vean en negrita. */
+}
+
+/* Estilos para la sección de video. */
+#video {
+    background-color: #740596da; /* Color de fondo semitransparente. */
+    border-radius: 10px; /* Bordes redondeados. */
+    max-width: 600px; /* Ancho máximo del contenedor. */
+    width: 90%; /* Ancho relativo. */
+    margin: auto; /* Centra el contenedor. */
+    padding: 10px 20px; /* Espaciado interno. */
+}
+
+/* Estilos para el texto dentro de la sección de video. */
+#video p {
+    color: white; /* Color del texto. */
+}
+
+/* Estilos para el iframe del video. */
+#video iframe {
+    margin: 1.7svw; /* Margen relativo. */
+    margin-bottom: 15px; /* Margen inferior. */
+    width: 94%; /* Ancho del iframe. */
+}
+
+/* Estilos para el título del formulario. */
+#t_formulario {
+    display: flex; /* Usa flexbox para organizar el contenido. */
+    align-items: center; /* Centra verticalmente. */
+    justify-content: start; /* Alinea el contenido a la izquierda. */
+    background-color: #550899; /* Color de fondo. */
+    font-size: 40px; /* Tamaño de fuente. */
+    color: white; /* Color del texto. */
+    height: 110px; /* Altura del contenedor. */
+    padding: 0 30px; /* Espaciado interno. */
+}
+
+/* Estilos para la descripción del formulario. */
+#descripcion_form {
+    padding-left: 40px; /* Espaciado interno. */
+    padding-right: 40px; /* Espaciado interno. */
+    font-size: 25px; /* Tamaño de fuente. */
+    font-weight: bold; /* Texto en negrita. */
+    text-align: justify; /* Alinea el texto justificado. */
+}
+
+/* Estilos para el formulario de factores de riesgo. */
+#factores_riesgo {
+    background-color: #ffffff; /* Color de fondo. */
+    position: relative; /* Posicionamiento relativo. */
+    width: 80%; /* Ancho relativo. */
+    max-width: 800px; /* Ancho máximo. */
+    margin: auto; /* Centra el formulario. */
+    padding-top: 10px; /* Espaciado interno. */
+    border: #630578be, 8px, solid; /* Borde del formulario. */
+    border-radius: 20px; /* Bordes redondeados. */
+    font-size: 22px; /* Tamaño de fuente. */
+    display: flex; /* Usa flexbox para organizar el contenido. */
+    flex-direction: column; /* Organiza los elementos en columna. */
+    text-align: center; /* Alinea el texto al centro. */
+}
+
+/* Estilos para las imágenes dentro del formulario. */
+#pregunta1 img {
+    display: block; /* Hace que la imagen sea un bloque. */
+    height: auto; /* Altura automática. */
+    margin: auto; /* Centra la imagen. */
+    max-width: 100%; /* Ancho máximo. */
+    padding-left: 15px; /* Espaciado interno. */
+    padding-right: 15px; /* Espaciado interno. */
+}
+
+/* Elimina el padding izquierdo de las listas en el formulario. */
+#formulario ul {
+    padding-left: 0;
+}
+
+/* Estilos para los elementos de lista en el formulario. */
+#formulario li {
+    margin-left: 60px; /* Margen izquierdo. */
+    margin-right: 60px; /* Margen derecho. */
+    padding-bottom: 20px; /* Espaciado inferior. */
+    text-align: justify; /* Alinea el texto justificado. */
+    padding-top: 30px; /* Espaciado superior. */
+}
+
+/* Ajusta la posición del ícono en los elementos de lista del formulario. */
+#formulario ul li::before {
+    top: 25px; /* Posición del ícono. */
+}
+
+/* Estilos para los elementos select en el formulario. */
+select {
+    max-width: 1700px; /* Ancho máximo. */
+    min-width: 200px; /* Ancho mínimo. */
+    width: 20vw; /* Ancho relativo. */
+    margin-bottom: 25px; /* Margen inferior. */
+    font-weight: 300; /* Grosor de la fuente. */
+    font-size: 18px; /* Tamaño de fuente. */
+    padding: 9px; /* Espaciado interno. */
+    border: 1.5px solid #4720a8; /* Borde del select. */
+    border-radius: 10px; /* Bordes redondeados. */
+    background-color: #fbf7ff; /* Color de fondo. */
+    cursor: pointer; /* Cambia el cursor a pointer. */
+    color: #2f0553f8; /* Color del texto. */
+}
+
+/* Estilos para las opciones dentro del select. */
+option {
+    padding: 10px; /* Espaciado interno. */
+}
+
+/* Estilos para las preguntas del formulario. */
+div[id^="pregunta"] {
+    position: relative; /* Posicionamiento relativo. */
+    margin-top: 18px; /* Margen superior. */
+    padding-top: 15px; /* Espaciado superior. */
+    margin-bottom: 30px; /* Margen inferior. */
+}
+
+/* Añade un degradado antes de cada pregunta. */
+div[id^="pregunta"]::before {
+    content: ""; /* Contenido vacío. */
+    position: absolute; /* Posicionamiento absoluto. */
+    display: block; /* Hace que el elemento sea un bloque. */
+    margin: 10px, auto; /* Margen. */
+    top: -25px; /* Posición superior. */
+    left: 5%; /* Posición izquierda. */
+    padding-top: 30px; /* Espaciado superior. */
+    width: 90%; /* Ancho relativo. */
+    height: 15px; /* Altura. */
+    background: linear-gradient(40deg, #f86f4c, #ecf53e); /* Degradado de colores. */
+    border-radius: 10px; /* Bordes redondeados. */
+}
+
+/* Estilos para los botones. */
+button {
+    font-size: 1.2em; /* Tamaño de fuente. */
+    font-weight: bold; /* Texto en negrita. */
+    color: #ffffff; /* Color del texto. */
+    padding: 10px 20px; /* Espaciado interno. */
+    border: 1px, solid, #550899; /* Borde del botón. */
+    border-radius: 10px; /* Bordes redondeados. */
+    box-shadow: 2px 2px #0000004e; /* Sombra del botón. */
+    background-color: #550899; /* Color de fondo. */
+    cursor: pointer; /* Cambia el cursor a pointer. */
+}
+
+/* Cambia el color de fondo del botón al pasar el mouse. */
+button:hover {
+    background-color: #8237c3;
+}
+
+/* Estilos para el contenedor del resultado. */
+#resultado {
+    position: relative; /* Posicionamiento relativo. */
+    background-color: #ffffffe6; /* Color de fondo semitransparente. */
+    margin: auto; /* Centra el contenedor. */
+    width: 300px; /* Ancho del contenedor. */
+    height: 100px; /* Altura del contenedor. */
+    display: flex; /* Usa flexbox para organizar el contenido. */
+    justify-content: center; /* Centra horizontalmente. */
+    align-items: center; /* Centra verticalmente. */
+    text-align: center; /* Alinea el texto al centro. */
+    font-size: 26px; /* Tamaño de fuente. */
+    margin-top: 50px; /* Margen superior. */
+    box-shadow: 0 0 30px 3px #1d013660; /* Sombra del contenedor. */
+    border-radius: 30px; /* Bordes redondeados. */
+}
+
+/* Estilos para los elementos con clase "exclamacion". */
+.exclamacion {
+    display: flex; /* Usa flexbox para organizar el contenido. */
+    font-weight: bold; /* Texto en negrita. */
+    color: transparent; /* Color del texto transparente. */
+    padding-left: 15px; /* Espaciado interno. */
+    padding-right: 15px; /* Espaciado interno. */
+    margin-bottom: 10px; /* Margen inferior. */
+    margin-top: 0; /* Margen superior. */
+}
+
+/* Estilos para el elemento con ID "rango_riesgo". */
+#rango_riesgo {
+    margin: 0; /* Elimina el margen. */
+    padding: 0; /* Elimina el padding. */
+    font-size: 28px; /* Tamaño de fuente. */
+    font-weight: bold; /* Texto en negrita. */
+    width: 150px; /* Ancho del contenedor. */
+    color: #31005a #fff836f6; /* Color del texto. */
+}
+
+/* Estilos para el elemento con ID "t_resultado". */
+#t_resultado {
+    width: 150px; /* Ancho del contenedor. */
+}
+
+/* Estilos para el pie de página. */
+#pie {
+    display: flex; /* Usa flexbox para organizar el contenido. */
+    align-items: flex-start; /* Alinea los elementos al inicio. */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos. */
+    gap: 5px; /* Espacio entre los elementos. */
+    background-color: #31005a; /* Color de fondo. */
+    font-size: 10px; /* Tamaño de fuente. */
+    height: 100px; /* Altura del pie de página. */
+    margin-top: 35px; /* Margen superior. */
+    color: white; /* Color del texto. */
+}
+
+/* Estilos para la sección de autores en el pie de página. */
+#autores {
+    height: 100px; /* Altura del contenedor. */
+    width: 240px !important; /* Ancho del contenedor. */
+    margin-left: 40px; /* Margen izquierdo. */
+}
+
+/* Estilos para las listas en la sección de autores. */
+#autores ul {
+    list-style-type: none; /* Elimina los puntos de la lista. */
+    display: grid; /* Usa grid para organizar el contenido. */
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño. */
+    padding-left: 0; /* Elimina el padding izquierdo. */
+    margin-top: 10px; /* Margen superior. */
+    color: #fff; /* Color del texto. */
+}
+
+/* Estilos para los elementos de lista en la sección de autores. */
+#autores li {
+    width: 190px !important; /* Ancho del contenedor. */
+}
+
+/* Estilos para los párrafos en la sección de autores. */
+#autores p {
+    font-size: 15px; /* Tamaño de fuente. */
+    font-weight: bold; /* Texto en negrita. */
+    margin: 0; /* Elimina el margen. */
+    padding-top: 15px; /* Espaciado superior. */
+    padding-left: 0; /* Elimina el padding izquierdo. */
+    color: #fff; /* Color del texto. */
+}
+
+/* Estilos para la sección de contacto en el pie de página. */
+#contacto {
+    width: 30%; /* Ancho relativo. */
+    max-width: 200px; /* Ancho máximo. */
+}
+
+/* Estilos para los párrafos en la sección de contacto. */
+#contacto p {
+    font-size: 15px; /* Tamaño de fuente. */
+    font-weight: bold; /* Texto en negrita. */
+    margin: 0; /* Elimina el margen. */
+    padding: 15px 0; /* Espaciado interno. */
+    color: #fff; /* Color del texto. */
+}
+
+/* Estilos para los números de contacto. */
+.numero {
+    padding: 0 !important; /* Elimina el padding. */
+    font-size: 13px !important; /* Tamaño de fuente. */
+    font-weight: normal !important; /* Texto normal. */
+}
+
+/* Media query para pantallas con un ancho mínimo de 750px (versión escritorio). */
+@media (min-width: 750px) {
+    /* Cambia la dirección del encabezado a fila y ajusta el espacio entre elementos. */
+    header .encabezado {
+        flex-direction: row; /* Organiza los elementos en fila. */
+        justify-content: space-between; /* Distribuye el espacio entre los elementos. */
+        height: 100px; /* Altura del encabezado. */
+    }
+
+    /* Ajusta el margen del título en el encabezado. */
+    .encabezado h1 {
+        margin: 0 60px; /* Margen izquierdo y derecho. */
+        align-items: center; /* Centra verticalmente. */
+    }
+
+    /* Ajusta la barra de navegación en el encabezado. */
+    header nav {
+        flex-direction: row; /* Organiza los elementos en fila. */
+        margin: 0 60px; /* Margen izquierdo y derecho. */
+        align-items: center; /* Centra verticalmente. */
+    }
+
+    /* Ajusta el ancho máximo de las secciones de información. */
+    #sobre_uva, #peligros, #recomendaciones {
+        max-width: 1200px; /* Ancho máximo. */
+    }
+
+    /* Organiza las secciones de información en columnas. */
+    .columnas_info {
+        display: flex; /* Usa flexbox para organizar el contenido. */
+        gap: 10px; /* Espacio entre las columnas. */
+        justify-content: space-between; /* Distribuye el espacio entre las columnas. */
+    }
+
+    /* Ajusta el ancho máximo del título de información. */
+    .titulo_info {
+        max-width: 800px; /* Ancho máximo. */
+    }
+
+    /* Ajusta la posición de las imágenes en las secciones. */
+    #img_cancer, #img_riesgo, #img_recomendaciones {
+        align-self: center; /* Centra verticalmente. */
+        justify-content: center; /* Centra horizontalmente. */
+        margin: 0; /* Elimina el margen. */
+        margin-left: 35px; /* Margen izquierdo. */
+    }
+
+    /* Ajusta la posición de la imagen en la sección "uva". */
+    #img_uva {
+        align-self: center; /* Centra verticalmente. */
+        justify-content: center; /* Centra horizontalmente. */
+        margin: 0; /* Elimina el margen. */
+        margin-right: 35px; /* Margen derecho. */
+    }
+
+    /* Ajusta el ancho máximo de las columnas en las secciones. */
+    #colum2_uva, #colum1_peligros, #colum1_riesgo, #colum1_recomendaciones {
+        max-width: 600px; /* Ancho máximo. */
+        align-self: center; /* Centra verticalmente. */
+        justify-content: center; /* Centra horizontalmente. */
+    }
+
+    /* Ajusta el margen del iframe del video. */
+    #video iframe {
+        margin: 10px 20px; /* Margen superior e inferior, y margen izquierdo y derecho. */
+    }
+
+    /* Ajusta el ancho máximo de la descripción del formulario. */
+    #descripcion_form {
+        max-width: 1100px; /* Ancho máximo. */
+        margin: 0 auto; /* Centra el contenedor. */
+        margin-bottom: 30px; /* Margen inferior. */
+    }
+
+    /* Ajusta la altura del título del formulario. */
+    #t_formulario {
+        height: 70px; /* Altura del contenedor. */
+        padding: 0 40px; /* Espaciado interno. */
+    }
+}

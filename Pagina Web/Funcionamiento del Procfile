@@ -1,0 +1,13 @@
+En el archivo "Procfile"se ve una unica linea, esta línea es una instrucción que se usa para desplegar una aplicación web (como una hecha con Flask) en un servidor. 
+Aquí te digo en qué consiste:
+
+web::
+#Indica que esto es un servicio web, es decir, una aplicación que va a recibir peticiones de Internet (como cuando alguien visita tu página).
+
+gunicorn:
+#Es un servidor que se encarga de manejar las peticiones que llegan a tu aplicación.
+#Es más fuerte y seguro que el servidor que trae Flask por defecto, que solo sirve para desarrollo.
+
+app:app:
+#El primer app es el nombre del archivo donde está tu aplicación (por ejemplo, app.py).
+#El segundo app es el nombre de la variable que representa tu aplicación Flask dentro de ese archivo.

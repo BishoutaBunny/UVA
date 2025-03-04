@@ -1,0 +1,8 @@
+La carpeta de "_pycache_" es una carpeta destinada para almacenar codigo compilado de tipo "py" con la finalidad de optimizar su velocidad convirtiendolo en 
+"pyc" e informa a la consola que la web esta corriendo en el servidor local. Se ve de este modo el archivo "__pycache__/app.cpython-313.pyc":
+
+Serving Flask app 'app.cpython-313' → #Está corriendo tu archivo app.py.
+Debug mode: on → #Permite que la página se reinicie automáticamente cuando modificas el código.
+Running on http://127.0.0.1:5000 → #Esa es la dirección donde puedes ver tu página localmente.
+192.168.83.233:5000 → #Esa es la dirección de tu red local, para abrir la página desde otros dispositivos conectados a la misma red Wi-Fi.
+Debugger PIN → #Permite depurar errores directamente desde el navegador.
