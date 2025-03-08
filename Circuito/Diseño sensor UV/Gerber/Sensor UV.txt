@@ -1,0 +1,11 @@
+Plotted to 'C:\Users\MIANO\Documents\Proyectos KiCAD\Diseño Sensor UV\Gerber\Diseño Sensor UV-F_Cu.gbr'.
+Plotted to 'C:\Users\MIANO\Documents\Proyectos KiCAD\Diseño Sensor UV\Gerber\Diseño Sensor UV-B_Cu.gbr'.
+Plotted to 'C:\Users\MIANO\Documents\Proyectos KiCAD\Diseño Sensor UV\Gerber\Diseño Sensor UV-F_Paste.gbr'.
+Plotted to 'C:\Users\MIANO\Documents\Proyectos KiCAD\Diseño Sensor UV\Gerber\Diseño Sensor UV-B_Paste.gbr'.
+Plotted to 'C:\Users\MIANO\Documents\Proyectos KiCAD\Diseño Sensor UV\Gerber\Diseño Sensor UV-F_Silkscreen.gbr'.
+Plotted to 'C:\Users\MIANO\Documents\Proyectos KiCAD\Diseño Sensor UV\Gerber\Diseño Sensor UV-B_Silkscreen.gbr'.
+Plotted to 'C:\Users\MIANO\Documents\Proyectos KiCAD\Diseño Sensor UV\Gerber\Diseño Sensor UV-F_Mask.gbr'.
+Plotted to 'C:\Users\MIANO\Documents\Proyectos KiCAD\Diseño Sensor UV\Gerber\Diseño Sensor UV-B_Mask.gbr'.
+Plotted to 'C:\Users\MIANO\Documents\Proyectos KiCAD\Diseño Sensor UV\Gerber\Diseño Sensor UV-Edge_Cuts.gbr'.
+Archivo de trabajo Gerber 'C:\Users\MIANO\Documents\Proyectos KiCAD\Diseño Sensor UV\Gerber\Diseño Sensor UV-job.gbrjob' creado.
+Info: Listo.
